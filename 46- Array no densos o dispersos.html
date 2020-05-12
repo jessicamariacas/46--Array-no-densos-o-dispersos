@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jessica Maria</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>RIFA CHEEECK</h1>
+
+    <script>
+        var carton = [];
+        var j;
+        var cant = 0;
+        do {
+            var premio = parseInt(Math.random() * 1000);
+            carton[premio] = 1000 * (cant + 1);
+            cant++;
+        } while (cant != 11);
+        for (j = 0; j < carton.length; j++) {
+            if (carton[j] !== undefined) {
+                document.write('Carton ' + j + ' tiene un premio de ' + carton[j] + '<br>'+'<br>');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
